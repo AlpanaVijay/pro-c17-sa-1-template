@@ -7,6 +7,7 @@ class Box
       this.w =w;
       this.h = h;
       this.vx = vx;
+      this.vy = vy;
     }
     
     show()
@@ -17,6 +18,10 @@ class Box
     move()
     {
       this.x = this.x+this.vx;
+    }
+    
+    moveUp(){
+      this.y = this.y + vy;
     }
 
   }
